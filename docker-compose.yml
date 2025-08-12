@@ -1,0 +1,8 @@
+services:
+  api:
+    build: ./service
+    volumes:
+      - ./service:/app
+      - ./data:/data
+    ports:
+      - "8000:8000"
