@@ -9,7 +9,7 @@ DB_PATH = "/data/app.db"
 # ensure data directory exists when running outside compose (optional)
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
-app = FastAPI(title="Light SQLite Service")
+app = FastAPI(title="SQLite Service")
 
 class ItemIn(BaseModel):
     name: str
