@@ -6,7 +6,7 @@ BASE = "http://localhost:8000"
 # initialize DB/table
 print(requests.post(f"{BASE}/init").json())
 # add a row
-r = requests.post(f"{BASE}/add", json={"name": "beta", "value": 1000})
+r = requests.post(f"{BASE}/add", json={"name": "beta", "value": 10})
 print("added:", r.json())
 item_id = r.json()["id"]
 
