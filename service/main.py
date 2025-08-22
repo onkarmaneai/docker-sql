@@ -69,5 +69,5 @@ def get_item(item_id: int):
     row = cur.fetchone()
     conn.close()
     if not row:
-        raise HTTPException(status_code=404, detail="Not found")
+        raise HTTPException(status_code=404, detail="Details Not found")
     return ItemOut(id=row["id"], name=row["name"], value=row["value"])
