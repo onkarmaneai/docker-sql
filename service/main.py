@@ -4,7 +4,7 @@ from typing import List
 import sqlite3
 import os
 
-DB_PATH = "/data/app1.db"
+DB_PATH = "/data/app11.db"
 
 # ensure data directory exists when running outside compose (optional)
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
